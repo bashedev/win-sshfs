@@ -1,0 +1,745 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/d:Common/f:Extensions.cs" caret="0" fromTop="0" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/d:Common/f:PipeStream.cs" caret="0" fromTop="0" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:SftpNode.cs" caret="1548" fromTop="0" />
+      <File id="d:Miscellaneous Files/f:System.Runtime.Caching.MemoryCache.cs/l:E!?SSHFSDEVEL?Sshfs?_ReSharper.Sshfs?DecompilerCache?metadata?System.Runtime.Caching-ebfa?System.Runtime.Caching.MemoryCache.cs" caret="746" fromTop="11" />
+      <File id="d:Miscellaneous Files/f:System.Runtime.Caching.DefaultCacheCapabilities.cs/l:E!?SSHFSDEVEL?Sshfs?_ReSharper.Sshfs?DecompilerCache?metadata?System.Runtime.Caching-ebfa?System.Runtime.Caching.DefaultCacheCapabilities.cs" caret="374" fromTop="5" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/d:Sftp/f:SftpFileStream.cs" caret="6846" fromTop="11" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/d:Sftp/f:SftpSession.cs" caret="430" fromTop="7" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/d:Channels/f:ChannelSession.cs" caret="10827" fromTop="9" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/d:Channels/f:Channel.cs" caret="13697" fromTop="16" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:SftpSizableBufferStream.cs" caret="1633" fromTop="11" />
+      <File id="A09B408A-26A0-4FF8-83D5-6E1B1DA5F63C/f:Dokan.cs" caret="3889" fromTop="67" />
+      <File id="A09B408A-26A0-4FF8-83D5-6E1B1DA5F63C/f:DokanError.cs" caret="981" fromTop="21" />
+      <File id="A09B408A-26A0-4FF8-83D5-6E1B1DA5F63C/f:DokanOptions.cs" caret="0" fromTop="0" />
+      <File id="A09B408A-26A0-4FF8-83D5-6E1B1DA5F63C/f:DokanStatus.cs" caret="0" fromTop="0" />
+      <File id="A09B408A-26A0-4FF8-83D5-6E1B1DA5F63C/f:FileAccess.cs" caret="0" fromTop="0" />
+      <File id="A09B408A-26A0-4FF8-83D5-6E1B1DA5F63C/f:FileInformation.cs" caret="0" fromTop="0" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/d:Sftp/f:SymbolicLinkCommand.cs" caret="0" fromTop="0" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/d:Sftp/f:RealPathCommand.cs" caret="0" fromTop="0" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:ReadLinkCommand.cs" caret="192" fromTop="8" />
+      <File id="A09B408A-26A0-4FF8-83D5-6E1B1DA5F63C/f:DokanOperationProxy.cs" caret="9180" fromTop="11" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:IsDirEmptyCommand.cs" caret="1291" fromTop="0" />
+      <File id="A09B408A-26A0-4FF8-83D5-6E1B1DA5F63C/f:IDokanOperations.cs" caret="13" fromTop="0" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/d:Messages/d:Transport/f:KeyExchangeDhInitMessage.cs" caret="985" fromTop="4" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/d:Common/f:SshData.cs" caret="7247" fromTop="0" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/f:ConnectionInfo.cs" caret="459" fromTop="11" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/f:KeyboardInteractiveConnectionInfo.cs" caret="631" fromTop="20" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/f:NoneConnectionInfo.cs" caret="368" fromTop="1" />
+      <File id="2F5F8C90-0BD1-424F-997C-7BC6280919D1/f:Session.cs" caret="21207" fromTop="0" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1010" fromTop="0" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Program.cs" caret="13" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="16" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="12" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Program.cs" caret="2636" fromTop="4" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="8" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="12" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="8" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="10" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="6" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="6" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="9" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="12" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="11" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="6" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="10" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="12" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="8" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="10" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="10" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="11" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="10" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="14" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="6" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="9" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Sshfs.cs" caret="1747" fromTop="16" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Program.cs" caret="3040" fromTop="10" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Program.cs" caret="1723" fromTop="3" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Program.cs" caret="2114" fromTop="16" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Program.cs" caret="1874" fromTop="4" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Program.cs" caret="3772" fromTop="7" />
+      <File id="2A64761E-86E7-4000-B993-0A180E3619D1/f:Program.cs" caret="13" fromTop="0" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="pci" priority="0" />
+      <Item value="public" priority="7" />
+      <Item value="readonly" priority="5" />
+      <Item value="string" priority="17" />
+      <Item value="prop" priority="0" />
+      <Item value="private" priority="11" />
+      <Item value="_root" priority="2" />
+      <Item value="root" priority="0" />
+      <Item value="using" priority="5" />
+      <Item value="Renci" priority="0" />
+      <Item value="SshNet" priority="0" />
+      <Item value="Sftp" priority="0" />
+      <Item value="TimeSpan`0" priority="2" />
+      <Item value="pcs" priority="0" />
+      <Item value="DokanNet" priority="0" />
+      <Item value="AppendData" priority="0" />
+      <Item value="FileAccessMode`0" priority="6" />
+      <Item value="Console`0" priority="42" />
+      <Item value="newpath" priority="1" />
+      <Item value="null" priority="14" />
+      <Item value="CloseAndRemove`0" priority="0" />
+      <Item value="info" priority="15" />
+      <Item value="oldpath" priority="0" />
+      <Item value="Log`0" priority="12" />
+      <Item value="if" priority="26" />
+      <Item value="format" priority="0" />
+      <Item value="offset" priority="2" />
+      <Item value="Handle" priority="0" />
+      <Item value="Position" priority="0" />
+      <Item value="_bufferSize" priority="1" />
+      <Item value="data" priority="0" />
+      <Item value="Length" priority="4" />
+      <Item value="int" priority="14" />
+      <Item value="i" priority="1" />
+      <Item value="UnmanagedMemoryStream`0" priority="0" />
+      <Item value="new" priority="39" />
+      <Item value="UnmanagedMemoryStream" priority="0" />
+      <Item value="SafeBuffer`0" priority="0" />
+      <Item value="MemoryCache" priority="0" />
+      <Item value="MemoryCache`0" priority="2" />
+      <Item value="_dircache" priority="6" />
+      <Item value="filename" priority="33" />
+      <Item value="var" priority="23" />
+      <Item value="as" priority="1" />
+      <Item value="Tuple" priority="3" />
+      <Item value="DateTime`0" priority="4" />
+      <Item value="FileInformation`0" priority="7" />
+      <Item value="dir" priority="1" />
+      <Item value="sftpattributes" priority="15" />
+      <Item value="files" priority="7" />
+      <Item value="return" priority="31" />
+      <Item value="DokanError`0" priority="15" />
+      <Item value="DateTimeOffset`0" priority="0" />
+      <Item value="ConcurrentDictionary" priority="0" />
+      <Item value="ConcurrentDictionary&lt;string,Tuple&lt;DateTime,FileInformation[]&gt;&gt;" priority="0" />
+      <Item value="dircacheitem" priority="5" />
+      <Item value="out" priority="1" />
+      <Item value="rawFlagsAndAttributes" priority="0" />
+      <Item value="Debug`0" priority="4" />
+      <Item value="false" priority="10" />
+      <Item value="_openedattributes" priority="1" />
+      <Item value="cmd" priority="16" />
+      <Item value="_openedstreams" priority="0" />
+      <Item value="FileInformation" priority="0" />
+      <Item value="for" priority="0" />
+      <Item value="System" priority="9" />
+      <Item value="ComponentModel" priority="0" />
+      <Item value="Collections" priority="0" />
+      <Item value="ObjectModel" priority="0" />
+      <Item value="ReadOnlyCollection" priority="0" />
+      <Item value="SftpFile`0" priority="0" />
+      <Item value="Stopwatch`0" priority="1" />
+      <Item value="watch" priority="5" />
+      <Item value="AsParallel`0" priority="0" />
+      <Item value="_filter" priority="1" />
+      <Item value="Any`1" priority="0" />
+      <Item value="_dirlistcache" priority="2" />
+      <Item value="_cache" priority="0" />
+      <Item value="newlist" priority="3" />
+      <Item value="key" priority="1" />
+      <Item value="CacheItem`0" priority="0" />
+      <Item value="item" priority="0" />
+      <Item value="this" priority="10" />
+      <Item value="String`0" priority="5" />
+      <Item value="GetUnixPath`0" priority="1" />
+      <Item value="else" priority="7" />
+      <Item value="_openedfiles" priority="3" />
+      <Item value="sshfs" priority="5" />
+      <Item value="value" priority="3" />
+      <Item value="remove" priority="0" />
+      <Item value="delegate" priority="5" />
+      <Item value="Dokan`0" priority="2" />
+      <Item value="bool" priority="8" />
+      <Item value="true" priority="13" />
+      <Item value="Version" priority="1" />
+      <Item value="base" priority="2" />
+      <Item value="UseKeepAlive" priority="0" />
+      <Item value="Security" priority="5" />
+      <Item value="Principal" priority="1" />
+      <Item value="SecurityIdentifier`0" priority="1" />
+      <Item value="Util" priority="0" />
+      <Item value="AccessControl" priority="3" />
+      <Item value="CommonSecurityDescriptor`0" priority="0" />
+      <Item value="CommonSecurityDescriptor" priority="0" />
+      <Item value="a" priority="5" />
+      <Item value="NativeObjectSecurity`0" priority="0" />
+      <Item value="reader" priority="0" />
+      <Item value="test" priority="0" />
+      <Item value="foreach" priority="3" />
+      <Item value="Regex`0" priority="2" />
+      <Item value="s" priority="0" />
+      <Item value="VARIABLE" priority="0" />
+      <Item value="MatchCollection`0" priority="0" />
+      <Item value="Match`0" priority="3" />
+      <Item value="matches" priority="3" />
+      <Item value="uid" priority="0" />
+      <Item value="Convert`0" priority="2" />
+      <Item value="match" priority="1" />
+      <Item value="try" priority="5" />
+      <Item value="SshException`0" priority="0" />
+      <Item value="SshPermissionDeniedException`0" priority="4" />
+      <Item value="catch" priority="1" />
+      <Item value="Lookup" priority="0" />
+      <Item value="Lookup&lt;int,uint&gt;" priority="0" />
+      <Item value="Dynamic" priority="1" />
+      <Item value="ExpandoObject`0" priority="0" />
+      <Item value="ExpandoObject" priority="0" />
+      <Item value="abstract" priority="0" />
+      <Item value="Attributes" priority="0" />
+      <Item value="_attributes" priority="2" />
+      <Item value="SftpFileAttributes" priority="0" />
+      <Item value="BufferedStream`0" priority="2" />
+      <Item value="Stream`0" priority="1" />
+      <Item value="SftpFileStream`0" priority="2" />
+      <Item value="stream" priority="5" />
+      <Item value="BufferedStream" priority="0" />
+      <Item value="ThreadPriorityLevel`0" priority="0" />
+      <Item value="MarshalByRefObject`0" priority="0" />
+      <Item value="_stream" priority="0" />
+      <Item value="ClassInterfaceAttribute`0" priority="0" />
+      <Item value="ClassInterfaceType`0" priority="0" />
+      <Item value="MethodAccessException`0" priority="0" />
+      <Item value="method" priority="0" />
+      <Item value="buffer" priority="7" />
+      <Item value="class" priority="3" />
+      <Item value="Native" priority="1" />
+      <Item value="static" priority="3" />
+      <Item value="internal" priority="4" />
+      <Item value="attributes" priority="10" />
+      <Item value="_useofflineatribute" priority="0" />
+      <Item value="SftpSession`0" priority="0" />
+      <Item value="_rwSftpSession" priority="1" />
+      <Item value="SftpSession" priority="0" />
+      <Item value="Session" priority="4" />
+      <Item value="_operationTimeout" priority="0" />
+      <Item value="NetworkDrive" priority="0" />
+      <Item value="size" priority="4" />
+      <Item value="Permissions" priority="0" />
+      <Item value="FileIOPermissionAccess`0" priority="0" />
+      <Item value="TypeDescriptorPermissionFlags`0" priority="0" />
+      <Item value="FileSystemRights`0" priority="5" />
+      <Item value="FileAccess`0" priority="0" />
+      <Item value="Environment`0" priority="5" />
+      <Item value="Process`0" priority="0" />
+      <Item value="FileAttributes`0" priority="2" />
+      <Item value="KeepAliveInterval" priority="0" />
+      <Item value="TimeSpan" priority="0" />
+      <Item value="FileAccess" priority="0" />
+      <Item value="file" priority="1" />
+      <Item value="IntPtr`0" priority="5" />
+      <Item value="SECURITY_DESCRIPTOR`0" priority="0" />
+      <Item value="SecurityInfos`0" priority="4" />
+      <Item value="RawSecurityDescriptor`0" priority="4" />
+      <Item value="DokanOperationProxy`0" priority="0" />
+      <Item value="GetFileSecurityDelegate" priority="0" />
+      <Item value="descriptor" priority="9" />
+      <Item value="rawFileName" priority="5" />
+      <Item value="rawRequestedInformation" priority="1" />
+      <Item value="ref" priority="2" />
+      <Item value="rawFileInfo" priority="2" />
+      <Item value="rawSecurityDescriptor" priority="3" />
+      <Item value="rawSecurityDescriptorLengthNeeded" priority="1" />
+      <Item value="ret" priority="0" />
+      <Item value="rawSecurityInformation" priority="2" />
+      <Item value="MarshalAs" priority="0" />
+      <Item value="UnmanagedType`0" priority="0" />
+      <Item value="byte" priority="1" />
+      <Item value="GetFileSecurity" priority="0" />
+      <Item value="dokanOperationProxy" priority="1" />
+      <Item value="SetFileSecurity" priority="0" />
+      <Item value="Marshal`0" priority="0" />
+      <Item value="rawSecurityDescriptorLength" priority="1" />
+      <Item value="securityDescriptor" priority="6" />
+      <Item value="SecurityIdentifier" priority="0" />
+      <Item value="WellKnownSidType" priority="0" />
+      <Item value="WellKnownSidType`0" priority="0" />
+      <Item value="FileSecurity`0" priority="7" />
+      <Item value="FileSecurity" priority="2" />
+      <Item value="controlSections" priority="0" />
+      <Item value="security" priority="15" />
+      <Item value="sections" priority="9" />
+      <Item value="None" priority="0" />
+      <Item value="fileSecurity" priority="0" />
+      <Item value="AccessControlSections`0" priority="7" />
+      <Item value="FileSystemAccessRule" priority="2" />
+      <Item value="NTAccount`0" priority="3" />
+      <Item value="NTAccount" priority="0" />
+      <Item value="FullControl" priority="0" />
+      <Item value="AccessControlType`0" priority="0" />
+      <Item value="requestedInformation" priority="0" />
+      <Item value="Access" priority="0" />
+      <Item value="In" priority="0" />
+      <Item value="ThreadCount" priority="0" />
+      <Item value="WindowsIdentity" priority="0" />
+      <Item value="NativeMethods`0" priority="0" />
+      <Item value="DokanNet.Native" priority="0" />
+      <Item value="Flags`0" priority="0" />
+      <Item value="dokanFiles" priority="0" />
+      <Item value="uint" priority="0" />
+      <Item value="Version`0" priority="0" />
+      <Item value="Begin" priority="0" />
+      <Item value="SftpFileAttributes`0" priority="1" />
+      <Item value="Buffer`0" priority="1" />
+      <Item value="Linq" priority="0" />
+      <Item value="CalculateBufferSize`0" priority="0" />
+      <Item value="_nexthandle" priority="0" />
+      <Item value="SocketFlags`0" priority="0" />
+      <Item value="void" priority="2" />
+      <Item value="Session`0" priority="0" />
+      <Item value="session" priority="0" />
+      <Item value="RemoveEmptyEntries" priority="0" />
+      <Item value="group" priority="0" />
+      <Item value="CheckUser`0" priority="0" />
+      <Item value="Select`2" priority="5" />
+      <Item value="greup" priority="0" />
+      <Item value="tryf" priority="0" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="e" priority="0" />
+      <Item value="indexer" priority="0" />
+      <Item value="_userId" priority="3" />
+      <Item value="GetUserId`0" priority="0" />
+      <Item value="_userGroups" priority="1" />
+      <Item value="GetUserGroups`0" priority="0" />
+      <Item value="total" priority="0" />
+      <Item value="free" priority="0" />
+      <Item value="available" priority="0" />
+      <Item value="GopherStyleUriParser`0" priority="0" />
+      <Item value="GopherStyleUriParser" priority="0" />
+      <Item value="GetFreeSpaceFromDf`0" priority="0" />
+      <Item value="totalBytes" priority="5" />
+      <Item value="totalFreeBytes" priority="1" />
+      <Item value="freeBytesAvailable" priority="1" />
+      <Item value="Contains`1" priority="0" />
+      <Item value="OrderByDescending`2" priority="0" />
+      <Item value="UserCanRead`0" priority="0" />
+      <Item value="UserCanExecute`0" priority="1" />
+      <Item value="UserCanWrite`0" priority="3" />
+      <Item value="fileinfo" priority="0" />
+      <Item value="DirectorySecurity`0" priority="0" />
+      <Item value="FileSystemSecurity`0" priority="0" />
+      <Item value="Allow" priority="0" />
+      <Item value="_linkmap" priority="3" />
+      <Item value="llinkpath" priority="2" />
+      <Item value="path" priority="3" />
+      <Item value="_linkPath" priority="0" />
+      <Item value="IsStatusHandled" priority="0" />
+      <Item value="ReadLinkCommand`0" priority="1" />
+      <Item value="_generalSftpSession" priority="2" />
+      <Item value="protected" priority="0" />
+      <Item value="override" priority="0" />
+      <Item value="Path" priority="0" />
+      <Item value="from" priority="0" />
+      <Item value="select" priority="0" />
+      <Item value="CompleteExecution`0" priority="0" />
+      <Item value="link" priority="0" />
+      <Item value="CLAP" priority="0" />
+      <Item value="remotepath" priority="1" />
+      <Item value="localpath" priority="0" />
+      <Item value="Parser" priority="0" />
+      <Item value="SshfsCli`0" priority="0" />
+      <Item value="args" priority="0" />
+      <Item value="VerbAttribute`0" priority="1" />
+      <Item value="NetPipeStyleUriParser`0" priority="0" />
+      <Item value="DefaultVerbAttribute`0" priority="0" />
+      <Item value="HelpAttribute`0" priority="1" />
+      <Item value="EmptyAttribute`0" priority="0" />
+      <Item value="help" priority="3" />
+      <Item value="ParameterAttribute`0" priority="0" />
+      <Item value="Aliases" priority="0" />
+      <Item value="Description" priority="1" />
+      <Item value="Default" priority="2" />
+      <Item value="Required" priority="0" />
+      <Item value="PrivateKeyConnectionInfo`0" priority="1" />
+      <Item value="params" priority="0" />
+      <Item value="ConnectionInfo`0" priority="0" />
+      <Item value="privatekeyspath" priority="4" />
+      <Item value="nguid" priority="0" />
+      <Item value="host" priority="1" />
+      <Item value="port" priority="1" />
+      <Item value="password" priority="0" />
+      <Item value="username" priority="0" />
+      <Item value="PrivateKeyFile`0" priority="0" />
+      <Item value="keys" priority="0" />
+      <Item value="letter" priority="2" />
+      <Item value="removable" priority="0" />
+      <Item value="networkdrive" priority="0" />
+      <Item value="passphrase" priority="1" />
+      <Item value="char" priority="2" />
+      <Item value="drives" priority="1" />
+      <Item value="Enumerable`0" priority="1" />
+      <Item value="c" priority="0" />
+      <Item value="drive" priority="0" />
+      <Item value="_debug" priority="0" />
+      <Item value="debug" priority="1" />
+      <Item value="hal" priority="0" />
+      <Item value="attr" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.TimeSpan">
+      <Item value="FromSeconds`0" priority="1" />
+      <Item value="MaxValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Sshfs.Sshfs">
+      <Item value="_operationTimeout" priority="2" />
+      <Item value="_sftpSession" priority="3" />
+      <Item value="Disconnect`0" priority="0" />
+      <Item value="Session" priority="3" />
+      <Item value="Disconnected" priority="2" />
+      <Item value="_disconected" priority="2" />
+      <Item value="Connect`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DokanNet.FileAccessMode">
+      <Item value="Delete" priority="0" />
+      <Item value="Execute" priority="0" />
+      <Item value="GenericExecute" priority="0" />
+      <Item value="GenericRead" priority="0" />
+      <Item value="GenericWrite" priority="0" />
+      <Item value="ReadData" priority="0" />
+      <Item value="WriteData" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="Print`0" priority="3" />
+      <Item value="Assert`0" priority="0" />
+      <Item value="Write`0" priority="0" />
+      <Item value="WriteLine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Renci.SshNet.Sftp.SftpSession">
+      <Item value="GetFileAttributes`0" priority="1" />
+      <Item value="GetCanonicalPath`0" priority="0" />
+      <Item value="Connect`0" priority="0" />
+      <Item value="GetRealPath`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="38" />
+      <Item value="ReadLine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DokanNet.DokanError">
+      <Item value="ErrorPathNotFound" priority="2" />
+      <Item value="ErrorSuccess" priority="2" />
+      <Item value="ErrorDirNotEmpty" priority="0" />
+      <Item value="ErrorExceptionInService" priority="1" />
+      <Item value="ErrorAccessDenied" priority="7" />
+      <Item value="ErrorError" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Contains`0" priority="2" />
+      <Item value="Split`0" priority="1" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="StartsWith`0" priority="0" />
+      <Item value="Substring`0" priority="0" />
+      <Item value="Length" priority="0" />
+      <Item value="FirstOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Runtime.Caching.MemoryCache">
+      <Item value="Default" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Runtime.Caching.MemoryCache">
+      <Item value="Contains`0" priority="0" />
+      <Item value="Remove`0" priority="0" />
+      <Item value="Add`0" priority="0" />
+      <Item value="Dispose`0" priority="0" />
+      <Item value="DefaultCacheCapabilities" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Tuple`2">
+      <Item value="Item1" priority="1" />
+      <Item value="Item2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Renci.SshNet.Sftp.SftpFileAttributes">
+      <Item value="LastWriteTime" priority="2" />
+      <Item value="OwnerCanRead" priority="1" />
+      <Item value="OthersCanRead" priority="1" />
+      <Item value="UserId" priority="1" />
+      <Item value="GroupId" priority="2" />
+      <Item value="OthersCanExecute" priority="1" />
+      <Item value="OwnerCanExecute" priority="0" />
+      <Item value="Size" priority="1" />
+      <Item value="IsSymbolicLink" priority="2" />
+      <Item value="GroupCanRead" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTimeOffset">
+      <Item value="MaxValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DokanNet.DokanFileInfo">
+      <Item value="Context" priority="5" />
+      <Item value="SynchronousIo" priority="0" />
+      <Item value="PagingIo" priority="0" />
+      <Item value="ResetTimeout`0" priority="1" />
+      <Item value="User" priority="0" />
+      <Item value="DeleteOnClose" priority="0" />
+      <Item value="IsDirectory" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Concurrent.ConcurrentDictionary`2">
+      <Item value="TryGetValue`0" priority="1" />
+      <Item value="TryRemove`0" priority="1" />
+      <Item value="Values" priority="0" />
+      <Item value="Keys" priority="1" />
+      <Item value="TryUpdate`0" priority="0" />
+      <Item value="AddOrUpdate`0" priority="0" />
+      <Item value="TryAdd`0" priority="1" />
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Renci.SshNet.Sftp.SftpFileStream">
+      <Item value="Position" priority="0" />
+      <Item value="Attributes" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Renci.SshNet.Sftp.SftpCommand">
+      <Item value="Execute`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Renci.SshNet.Sftp.ListDirectoryCommand">
+      <Item value="Files" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Count`1" priority="0" />
+      <Item value="AsParallel`0" priority="0" />
+      <Item value="Skip`1" priority="0" />
+      <Item value="Select`2" priority="1" />
+      <Item value="ToArray`1" priority="3" />
+      <Item value="LastOrDefault`1" priority="0" />
+      <Item value="First`1" priority="1" />
+      <Item value="Cast`1" priority="0" />
+      <Item value="Except`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ObjectModel.ReadOnlyCollection`1">
+      <Item value="Count" priority="1" />
+      <Item value="AsParallel`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.Stopwatch">
+      <Item value="Start`0" priority="1" />
+      <Item value="Stop`0" priority="1" />
+      <Item value="ElapsedTicks" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.ICollection`1">
+      <Item value="Remove`0" priority="0" />
+      <Item value="Where`1" priority="0" />
+      <Item value="FirstOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="3" />
+      <Item value="Format`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Sshfs.CheckDirectoryCommand">
+      <Item value="Execute`0" priority="0" />
+      <Item value="IsEmpty" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="HasValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Renci.SshNet.Session">
+      <Item value="Disconnected" priority="6" />
+      <Item value="ErrorOccured" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DokanNet.Dokan">
+      <Item value="Unmount`0" priority="0" />
+      <Item value="RemoveMountPoint`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Renci.SshNet.BaseClient">
+      <Item value="Session" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StringReader">
+      <Item value="ReadToEnd`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Renci.SshNet.SshCommand">
+      <Item value="Result" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.RegularExpressions.Regex">
+      <Item value="Match`0" priority="0" />
+      <Item value="Matches`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Match">
+      <Item value="Groups" priority="0" />
+      <Item value="Result`0" priority="0" />
+      <Item value="Value" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Group">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToUInt32`0" priority="2" />
+      <Item value="ToInt32`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.MatchCollection">
+      <Item value="AsQueryable`0" priority="0" />
+      <Item value="OfType`1" priority="2" />
+      <Item value="Cast`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable">
+      <Item value="AsParallel`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.ParallelQuery">
+      <Item value="AsOrdered`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="MaxValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.FileAttributes">
+      <Item value="Offline" priority="2" />
+      <Item value="SparseFile" priority="0" />
+      <Item value="Temporary" priority="0" />
+      <Item value="ReadOnly" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Sshfs.IsDirEmptyCommand">
+      <Item value="IsEmpty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Renci.SshNet.PasswordConnectionInfo">
+      <Item value="Username" priority="0" />
+      <Item value="Host" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment">
+      <Item value="Exit`0" priority="3" />
+      <Item value="UserName" priority="1" />
+      <Item value="UserDomainName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Process">
+      <Item value="GetCurrentProcess`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.Process">
+      <Item value="Kill`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Renci.SshNet.Sftp.SftpFile">
+      <Item value="IsSymbolicLink" priority="0" />
+      <Item value="Attributes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DokanNet.DokanOperationProxy">
+      <Item value="GetFileSecurityDelegate`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DokanNet.IDokanOperations">
+      <Item value="GetFileSecurity`0" priority="0" />
+      <Item value="SetFileAttributes`0" priority="0" />
+      <Item value="SetFileSecurity`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Runtime.InteropServices.Marshal">
+      <Item value="Copy`0" priority="1" />
+      <Item value="StructureToPtr`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.AccessControl.RawSecurityDescriptor">
+      <Item value="BinaryLength" priority="1" />
+      <Item value="GetBinaryForm`0" priority="0" />
+      <Item value="Owner" priority="0" />
+      <Item value="SetFlags`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Runtime.InteropServices.UnmanagedType">
+      <Item value="LPArray" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DokanNet.DokanOperationProxy">
+      <Item value="GetFileSecurity`0" priority="0" />
+      <Item value="SetFileSecurity`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.AccessControl.FileSecurity">
+      <Item value="GetSecurityDescriptorBinaryForm`0" priority="1" />
+      <Item value="AccessRightType" priority="0" />
+      <Item value="SetAccessRule`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.AccessControl.AccessControlSections">
+      <Item value="HasFlag`0" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Security.AccessControl.AccessControlSections">
+      <Item value="Access" priority="1" />
+      <Item value="None" priority="0" />
+      <Item value="Owner" priority="1" />
+      <Item value="Group" priority="1" />
+      <Item value="Audit" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.AccessControl.SecurityInfos">
+      <Item value="HasFlag`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Security.AccessControl.SecurityInfos">
+      <Item value="Owner" priority="0" />
+      <Item value="Group" priority="0" />
+      <Item value="SystemAcl" priority="0" />
+      <Item value="DiscretionaryAcl" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Security.AccessControl.AccessControlType">
+      <Item value="Allow" priority="0" />
+      <Item value="Deny" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DokanNet.Native.NativeMethods">
+      <Item value="DokanOpenRequestorToken`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Principal.WindowsIdentity">
+      <Item value="User" priority="1" />
+      <Item value="Name" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Principal.SecurityIdentifier">
+      <Item value="AccountDomainSid" priority="0" />
+      <Item value="Value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Sshfs.SftpNode">
+      <Item value="Content" priority="0" />
+      <Item value="Attributes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="Seek`0" priority="0" />
+      <Item value="Write`0" priority="0" />
+      <Item value="Flush`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DokanNet.FileInformation">
+      <Item value="Attributes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.AccessControl.FileSystemSecurity">
+      <Item value="SetAccessRule`0" priority="0" />
+      <Item value="AddAccessRule`0" priority="1" />
+      <Item value="SetOwner`0" priority="0" />
+      <Item value="SetGroup`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Security.AccessControl.FileSystemRights">
+      <Item value="FullControl" priority="1" />
+      <Item value="WriteAttributes" priority="0" />
+      <Item value="WriteExtendedAttributes" priority="0" />
+      <Item value="ChangePermissions" priority="0" />
+      <Item value="Write" priority="0" />
+      <Item value="ReadAndExecute" priority="0" />
+      <Item value="Read" priority="0" />
+      <Item value="Traverse" priority="0" />
+      <Item value="ListDirectory" priority="0" />
+      <Item value="ReadData" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Sshfs.ReadLinkCommand">
+      <Item value="SendReadLinkMessage`0" priority="0" />
+      <Item value="Execute`0" priority="1" />
+      <Item value="Path" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Renci.SshNet.Sftp.Messages.StatusCodes">
+      <Item value="NoSuchFile" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IDictionary`2">
+      <Item value="Keys" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CLAP.Parser`1">
+      <Item value="Run`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Linq.Enumerable">
+      <Item value="Range`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.DriveInfo">
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
