@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Namespaces>
+  <Namespace Name="DokanNet">
+   <Messages>
+    <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in namespace name 'DokanNet'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\Documents and Settings\Dragan\Desktop\DokanNet\bin\x86\Debug\DokanNet.dll">
+   <Modules>
+    <Module Name="dokannet.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'DokanNet.dll' with a strong name key.</Issue>
+      </Message>
+      <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in assembly name 'DokanNet.dll'.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+       <Issue Name="AttributeTrue" Certainty="95" Level="Error">Consider changing the ComVisible attribute on 'DokanNet.dll' to false, and opting in at the type level.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="DokanNet">
+       <Types>
+        <Type Name="Dokan" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in type name 'Dokan'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Main(DokanNet.DokanOptions,DokanNet.IDokanOperations)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="Dokan.cs" Line="209">In externally visible method 'Dokan.Main(DokanOptions, IDokanOperations)', validate parameter 'options' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ResetTimeout(DokanNet.DokanFileInfo,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="fileinfo" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="Dokan.cs" Line="285">In method 'Dokan.ResetTimeout(this DokanFileInfo, uint)', correct the spelling of 'fileinfo' in parameter name 'fileinfo' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Unmount(System.Char)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Unmount" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="Dokan.cs" Line="265">Correct the spelling of 'Unmount' in member name 'Dokan.Unmount(char)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DokanError" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in type name 'DokanError'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="DokanFileInfo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in type name 'DokanFileInfo'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#DokanContext" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="Dokan.cs" Line="36">Correct the spelling of 'Dokan' in member name 'DokanFileInfo.DokanContext' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Nocache" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Nocache" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="Dokan.cs" Line="70">Correct the spelling of 'Nocache' in member name 'DokanFileInfo.Nocache' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PagingIo" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Io" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="Dokan.cs" Line="58">Correct the casing of 'Io' in member name 'DokanFileInfo.PagingIo' by changing it to 'IO'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SynchronousIo" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Io" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="Dokan.cs" Line="64">Correct the casing of 'Io' in member name 'DokanFileInfo.SynchronousIo' by changing it to 'IO'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DokanOperationProxy" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#CleanupProxy(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="159">Modify 'DokanOperationProxy.CleanupProxy(string, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CloseFileProxy(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="179">Modify 'DokanOperationProxy.CloseFileProxy(string, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateDirectoryProxy(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="139">Modify 'DokanOperationProxy.CreateDirectoryProxy(string, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateFileProxy(System.String,System.UInt32,System.UInt32,System.UInt32,System.UInt32,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="93">Modify 'DokanOperationProxy.CreateFileProxy(string, uint, uint, uint, uint, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DeleteDirectoryProxy(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="603">Modify 'DokanOperationProxy.DeleteDirectoryProxy(string, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DeleteFileProxy(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="584">Modify 'DokanOperationProxy.DeleteFileProxy(string, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FindFilesProxy(System.String,System.IntPtr,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="351">Modify 'DokanOperationProxy.FindFilesProxy(string, IntPtr, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FlushFileBuffersProxy(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="248">Modify 'DokanOperationProxy.FlushFileBuffersProxy(string, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDiskFreeSpaceProxy(System.UInt64&amp;,System.UInt64&amp;,System.UInt64&amp;,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="692">Modify 'DokanOperationProxy.GetDiskFreeSpaceProxy(ref ulong, ref ulong, ref ulong, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetFileInformationProxy(System.String,DokanNet.BY_HANDLE_FILE_INFORMATION&amp;,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="306">Modify 'DokanOperationProxy.GetFileInformationProxy(string, ref BY_HANDLE_FILE_INFORMATION, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetVolumeInformationProxy(System.Text.StringBuilder,System.UInt32,System.UInt32&amp;,System.UInt32&amp;,System.UInt32&amp;,System.Text.StringBuilder,System.UInt32,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="739">Modify 'DokanOperationProxy.GetVolumeInformationProxy(StringBuilder, uint, ref uint, ref uint, ref uint, StringBuilder, uint, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LockFileProxy(System.String,System.Int64,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="648">Modify 'DokanOperationProxy.LockFileProxy(string, long, long, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MoveFileProxy(System.String,System.String,System.Boolean,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="627">Modify 'DokanOperationProxy.MoveFileProxy(string, string, bool, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OpenDirectoryProxy(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="116">Modify 'DokanOperationProxy.OpenDirectoryProxy(string, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadFileProxy(System.String,System.Byte[],System.UInt32,System.UInt32&amp;,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="205">Modify 'DokanOperationProxy.ReadFileProxy(string, byte[], uint, ref uint, long, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetAllocationSizeProxy(System.String,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="511">Modify 'DokanOperationProxy.SetAllocationSizeProxy(string, long, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetEndOfFileProxy(System.String,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="493">Modify 'DokanOperationProxy.SetEndOfFileProxy(string, long, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetFileAttributesProxy(System.String,System.UInt32,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="531">Modify 'DokanOperationProxy.SetFileAttributesProxy(string, uint, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetFileTimeProxy(System.String,System.Runtime.InteropServices.ComTypes.FILETIME&amp;,System.Runtime.InteropServices.ComTypes.FILETIME&amp;,System.Runtime.InteropServices.ComTypes.FILETIME&amp;,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="566">Modify 'DokanOperationProxy.SetFileTimeProxy(string, ref FILETIME, ref FILETIME, ref FILETIME, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UnlockFileProxy(System.String,System.Int64,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="670">Modify 'DokanOperationProxy.UnlockFileProxy(string, long, long, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UnmountProxy(DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="755">Modify 'DokanOperationProxy.UnmountProxy(DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteFileProxy(System.String,System.Byte[],System.UInt32,System.UInt32&amp;,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Documents and Settings\Dragan\Desktop\DokanNet" File="DokanOperationProxy.cs" Line="229">Modify 'DokanOperationProxy.WriteFileProxy(string, byte[], uint, ref uint, long, DokanFileInfo)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DokanOptions" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in type name 'DokanOptions'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#FilesystemName" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Filesystem" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Filesystem' in member name 'DokanOptions.FilesystemName' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DokanStatus" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in type name 'DokanStatus'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#DokanDriveLetterError" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in member name 'DokanStatus.DokanDriveLetterError' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DokanDriverInstallError" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in member name 'DokanStatus.DokanDriverInstallError' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DokanError" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in member name 'DokanStatus.DokanError' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DokanMountError" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in member name 'DokanStatus.DokanMountError' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DokanStartError" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in member name 'DokanStatus.DokanStartError' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DokanSuccess" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in member name 'DokanStatus.DokanSuccess' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FileAccessMode" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Name="NotIntegral" Certainty="60" Level="Warning">If possible, make the underlying type of 'FileAccessMode' Int32 instead of 'uint'. Otherwise consider Byte, Int16, or Int64.</Issue>
+          </Message>
+          <Message TypeName="FlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1714" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If enumeration name 'FileAccessMode' is singular, change it to a plural form.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="FileInformation" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Attributes" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FileInformation.Attributes' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreationTime" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FileInformation.CreationTime' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FileName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FileInformation.FileName' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LastAccessTime" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FileInformation.LastAccessTime' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LastWriteTime" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FileInformation.LastWriteTime' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Length" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FileInformation.Length' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDokanOperations" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Dokan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dokan' in type name 'IDokanOperations'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Cleanup(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.Cleanup(string, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CloseFile(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.CloseFile(string, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateDirectory(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.CreateDirectory(string, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateFile(System.String,DokanNet.FileAccessMode,System.IO.FileShare,System.IO.FileMode,System.IO.FileOptions,System.IO.FileAttributes,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.CreateFile(string, FileAccessMode, FileShare, FileMode, FileOptions, FileAttributes, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+            <Message Id="flags" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterNoAlternate" Certainty="95" Level="Error">In member 'IDokanOperations.CreateFile(string, FileAccessMode, FileShare, FileMode, FileOptions, FileAttributes, DokanFileInfo)', replace the term 'flags' in parameter name 'flags' with an appropriate alternate or remove it entirely.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DeleteDirectory(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.DeleteDirectory(string, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DeleteFile(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.DeleteFile(string, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FindFiles(System.String,DokanNet.FileInformation[]&amp;,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Consider a design that does not require that 'files' be an out parameter.</Issue>
+            </Message>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.FindFiles(string, out FileInformation[], DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FlushFileBuffers(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.FlushFileBuffers(string, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDiskFreeSpace(System.UInt64&amp;,System.UInt64&amp;,System.UInt64&amp;,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Consider a design that does not require that 'freeBytesAvailable' be a reference parameter.</Issue>
+            </Message>
+            <Message Id="1#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Consider a design that does not require that 'totalBytes' be a reference parameter.</Issue>
+            </Message>
+            <Message Id="2#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Consider a design that does not require that 'totalFreeBytes' be a reference parameter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetFileInformation(System.String,DokanNet.FileInformation&amp;,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.GetFileInformation(string, ref FileInformation, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+            <Message Id="1#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalWarning">Consider a design that does not require that 'fileinfo' be a reference parameter.</Issue>
+            </Message>
+            <Message Id="fileinfo" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning">In method 'IDokanOperations.GetFileInformation(string, ref FileInformation, DokanFileInfo)', correct the spelling of 'fileinfo' in parameter name 'fileinfo' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LockFile(System.String,System.Int64,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.LockFile(string, long, long, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MoveFile(System.String,System.String,System.Boolean,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.MoveFile(string, string, bool, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+            <Message Id="newname" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning">In method 'IDokanOperations.MoveFile(string, string, bool, DokanFileInfo)', correct the spelling of 'newname' in parameter name 'newname' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OpenDirectory(System.String,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.OpenDirectory(string, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadFile(System.String,System.Byte[],System.UInt32&amp;,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.ReadFile(string, byte[], ref uint, long, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+            <Message Id="2#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Consider a design that does not require that 'readLength' be a reference parameter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetAllocationSize(System.String,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.SetAllocationSize(string, long, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetEndOfFile(System.String,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.SetEndOfFile(string, long, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetFileAttributes(System.String,System.IO.FileAttributes,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.SetFileAttributes(string, FileAttributes, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+            <Message Id="attr" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning">In method 'IDokanOperations.SetFileAttributes(string, FileAttributes, DokanFileInfo)', correct the spelling of 'attr' in parameter name 'attr' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetFileTime(System.String,System.DateTime,System.DateTime,System.DateTime,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.SetFileTime(string, DateTime, DateTime, DateTime, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UnlockFile(System.String,System.Int64,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.UnlockFile(string, long, long, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Unmount(DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Unmount" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Unmount' in member name 'IDokanOperations.Unmount(DokanFileInfo)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteFile(System.String,System.Byte[],System.UInt32&amp;,System.Int64,DokanNet.DokanFileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="filename" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error">In member 'IDokanOperations.WriteFile(string, byte[], ref uint, long, DokanFileInfo)', the discrete term 'filename' in parameter name 'filename' should be expressed as a compound word, 'fileName'.</Issue>
+            </Message>
+            <Message Id="2#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Consider a design that does not require that 'numberOfBytesWritten' be a reference parameter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NativeMethods" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#DokanResetTimeout(System.UInt32,DokanNet.DokanFileInfo)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.DokanResetTimeout(uint, DokanFileInfo)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="WIN32_FIND_DATA" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DATA" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DATA' in type name 'WIN32_FIND_DATA' by changing it to 'Data'.</Issue>
+          </Message>
+          <Message Id="FIND" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'FIND' in type name 'WIN32_FIND_DATA' by changing it to 'Find'.</Issue>
+          </Message>
+          <Message Id="WIN" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'WIN' in type name 'WIN32_FIND_DATA' by changing it to 'Win'.</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="95" Level="Error">Remove the underscores from type name 'WIN32_FIND_DATA'.</Issue>
+          </Message>
+          <Message TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="NonBreaking">
+           <Issue Name="Equals" Certainty="75" Level="Warning">'WIN32_FIND_DATA' should override Equals.</Issue>
+           <Issue Name="op_Equality" Certainty="75" Level="Warning">'WIN32_FIND_DATA' should override the equality (==) and inequality (!=) operators.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#cFileName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'WIN32_FIND_DATA.cFileName' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#dwFileAttributes" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'WIN32_FIND_DATA.dwFileAttributes' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="dw" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'dw' in member name 'WIN32_FIND_DATA.dwFileAttributes' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ftCreationTime" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'WIN32_FIND_DATA.ftCreationTime' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ftLastAccessTime" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'WIN32_FIND_DATA.ftLastAccessTime' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ftLastWriteTime" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'WIN32_FIND_DATA.ftLastWriteTime' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#nFileSizeHigh" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'WIN32_FIND_DATA.nFileSizeHigh' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#nFileSizeLow" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-05-01 17:13:47Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'WIN32_FIND_DATA.nFileSizeLow' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021">
+   <Name>Avoid out parameters</Name>
+   <Description>Using out parameters might indicate a design flaw. Although there are legitimate times to use out parameters, their use frequently indicates a design that does not conform to the design guidelines for managed code.</Description>
+   <Resolution Name="Default">Consider a design that does not require that {0} be an out parameter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182131(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberParameterShouldBeCompoundWord">In member {0}, the discrete term '{1}' in parameter name {2} should be expressed as a compound word, '{3}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182137(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>Do not declare visible instance fields</Name>
+   <Description>Instance fields that are visible outside of the type that declares them, limit your ability to change the implementation details for those data items. Use properties instead. They do not compromise usability or performance and they do provide flexibility in that they conceal the implementation details of the underlying data.</Description>
+   <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182141(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045">
+   <Name>Do not pass types by reference</Name>
+   <Description>Although there are legitimate times to use reference parameters, such use frequently indicates a design that does not conform to the design guidelines for managed code.</Description>
+   <Resolution Name="Default">Consider a design that does not require that {0} be a reference parameter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182146(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028">
+   <Name>Enum storage should be Int32</Name>
+   <Description>There is little or no benefit to using a type smaller than Int32. You might require a type that is larger than Int32 if: 1) the enumeration values are flags and there are or will be many (&amp;amp;gt;32) values, or 2) the type needs to be different from Int32 for backward compatibility. Avoid using an underlying type that is not integral.</Description>
+   <Resolution Name="NotIntegral">If possible, make the underlying type of {0} Int32 instead of {1}. Otherwise consider Byte, Int16, or Int64.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182147(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="60">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="FlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1714">
+   <Name>Flags enums should have plural names</Name>
+   <Description>An enumeration marked with FlagsAttribute should have a plural name.</Description>
+   <Resolution Name="Default">If enumeration name {0} is singular, change it to a plural form.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264486(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Assembly">Correct the spelling of '{0}' in assembly name {1}.</Resolution>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+   <Name>Identifiers should not contain underscores</Name>
+   <Description>Do not use underscores when specifying identifiers. Some generated Visual Studio identifiers for applications contain underscore characters. Underscore characters should generally be avoided in public identifiers.</Description>
+   <Resolution Name="Type">Remove the underscores from type name {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182245(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017">
+   <Name>Mark assemblies with ComVisibleAttribute</Name>
+   <Description>The System.Runtime.InteropServices.ComVisible attribute indicates whether COM clients can use the library. Good design dictates that developers explicitly indicate COM visibility. The default value for this attribute is 'true'. However, the best design is to mark the assembly ComVisible false, and then mark types, interfaces, and individual members as ComVisible true, as appropriate.</Description>
+   <Resolution Name="AttributeTrue">Consider changing the ComVisible attribute on {0} to false, and opting in at the type level.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182157(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError, Error</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414">
+   <Name>Mark boolean P/Invoke arguments with MarshalAs</Name>
+   <Description>All boolean P/Invoke parameters and return types should be explicitly marked with the MarshalAs attribute. By default, the system will marshal all booleans as 4-byte UnmanagedType.Bool. This is the correct behavior for Win32 'BOOL' arguments but incorrect for C++ 'bool' arguments, which should be marshaled as 1-byte UnmanagedType.U1. For code maintainability reasons, always explicitly specify the marshaling information for boolean arguments and return values.</Description>
+   <Resolution Name="Return">Add the MarshalAsAttribute to the return type of P/Invoke {0}. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182206(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815">
+   <Name>Override equals and operator equals on value types</Name>
+   <Description>The default System.ValueType implementation might not perform as well as a custom implementation.</Description>
+   <Resolution Name="Equals">{0} should override Equals.</Resolution>
+   <Resolution Name="op_Equality">{0} should override the equality (==) and inequality (!=) operators.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182276(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+   <Name>Use preferred terms</Name>
+   <Description>Use preferred terms over deprecated alternates.</Description>
+   <Resolution Name="MemberParameterNoAlternate">In member {0}, replace the term '{1}' in parameter name {2} with an appropriate alternate or remove it entirely.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182258(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

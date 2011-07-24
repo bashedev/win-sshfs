@@ -1,0 +1,15 @@
+C:\Documents and Settings\Dragan\Desktop\DokanNet\bin\x86\Debug\DokanNet.dll
+C:\Documents and Settings\Dragan\Desktop\DokanNet\bin\x86\Debug\DokanNet.pdb
+C:\Documents and Settings\Dragan\Desktop\DokanNet\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Dragan\Desktop\DokanNet\obj\x86\Debug\DokanNet.dll
+C:\Documents and Settings\Dragan\Desktop\DokanNet\obj\x86\Debug\DokanNet.pdb
+E:\Copy of DokanNet\bin\x86\Debug\DokanNet.dll
+E:\Copy of DokanNet\bin\x86\Debug\DokanNet.pdb
+E:\Copy of DokanNet\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Copy of DokanNet\obj\x86\Debug\DokanNet.dll
+E:\Copy of DokanNet\obj\x86\Debug\DokanNet.pdb
+E:\SSHFSDEVEL\DokanNet_6.0\bin\x86\Debug\DokanNet.dll
+E:\SSHFSDEVEL\DokanNet_6.0\bin\x86\Debug\DokanNet.pdb
+E:\SSHFSDEVEL\DokanNet_6.0\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SSHFSDEVEL\DokanNet_6.0\obj\x86\Debug\DokanNet.dll
+E:\SSHFSDEVEL\DokanNet_6.0\obj\x86\Debug\DokanNet.pdb
