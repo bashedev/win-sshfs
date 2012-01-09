@@ -1,6 +1,0 @@
-E:\SSHFSDEVEL\Renci.SshClient\Renci.SshNet\bin\Release\Renci.SshNet.xml
-E:\SSHFSDEVEL\Renci.SshClient\Renci.SshNet\bin\Release\Renci.SshNet.dll
-E:\SSHFSDEVEL\Renci.SshClient\Renci.SshNet\bin\Release\Renci.SshNet.pdb
-E:\SSHFSDEVEL\Renci.SshClient\Renci.SshNet\obj\Release\ResolveAssemblyReference.cache
-E:\SSHFSDEVEL\Renci.SshClient\Renci.SshNet\obj\Release\Renci.SshNet.dll
-E:\SSHFSDEVEL\Renci.SshClient\Renci.SshNet\obj\Release\Renci.SshNet.pdb

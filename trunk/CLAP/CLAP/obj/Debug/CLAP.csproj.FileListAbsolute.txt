@@ -1,5 +1,0 @@
-E:\SSHFSDEVEL\CLAP\CLAP\bin\Debug\CLAP.dll
-E:\SSHFSDEVEL\CLAP\CLAP\bin\Debug\CLAP.pdb
-E:\SSHFSDEVEL\CLAP\CLAP\obj\Debug\ResolveAssemblyReference.cache
-E:\SSHFSDEVEL\CLAP\CLAP\obj\Debug\CLAP.dll
-E:\SSHFSDEVEL\CLAP\CLAP\obj\Debug\CLAP.pdb

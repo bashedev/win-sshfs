@@ -1,5 +1,0 @@
-C:\Documents and Settings\Dragan\Desktop\DokanNet\bin\Release\DokanNet.dll
-C:\Documents and Settings\Dragan\Desktop\DokanNet\bin\Release\DokanNet.pdb
-C:\Documents and Settings\Dragan\Desktop\DokanNet\obj\Release\ResolveAssemblyReference.cache
-C:\Documents and Settings\Dragan\Desktop\DokanNet\obj\Release\DokanNet.dll
-C:\Documents and Settings\Dragan\Desktop\DokanNet\obj\Release\DokanNet.pdb
