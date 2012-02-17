@@ -67,6 +67,10 @@
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.mountMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unmountMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.startupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -96,7 +100,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.99348F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.00651F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(539, 328);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(532, 328);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // fieldsPanel
@@ -104,7 +108,7 @@
             this.fieldsPanel.ColumnCount = 3;
             this.fieldsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.9639F));
             this.fieldsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0361F));
-            this.fieldsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.fieldsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.fieldsPanel.Controls.Add(this.nameBox, 1, 0);
             this.fieldsPanel.Controls.Add(this.label1, 0, 0);
             this.fieldsPanel.Controls.Add(this.hostBox, 1, 1);
@@ -122,7 +126,7 @@
             this.fieldsPanel.Controls.Add(this.panel2, 1, 5);
             this.fieldsPanel.Controls.Add(this.authLabel, 0, 5);
             this.fieldsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fieldsPanel.Location = new System.Drawing.Point(234, 5);
+            this.fieldsPanel.Location = new System.Drawing.Point(231, 5);
             this.fieldsPanel.Name = "fieldsPanel";
             this.fieldsPanel.RowCount = 12;
             this.fieldsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
@@ -137,15 +141,16 @@
             this.fieldsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.fieldsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.fieldsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.fieldsPanel.Size = new System.Drawing.Size(302, 274);
+            this.fieldsPanel.Size = new System.Drawing.Size(298, 274);
             this.fieldsPanel.TabIndex = 3;
             // 
             // nameBox
             // 
             this.nameBox.Location = new System.Drawing.Point(87, 3);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(190, 20);
+            this.nameBox.Size = new System.Drawing.Size(189, 20);
             this.nameBox.TabIndex = 0;
+            this.nameBox.Leave += new System.EventHandler(this.box_Leave);
             // 
             // label1
             // 
@@ -162,8 +167,9 @@
             // 
             this.hostBox.Location = new System.Drawing.Point(87, 32);
             this.hostBox.Name = "hostBox";
-            this.hostBox.Size = new System.Drawing.Size(190, 20);
+            this.hostBox.Size = new System.Drawing.Size(189, 20);
             this.hostBox.TabIndex = 2;
+            this.hostBox.Leave += new System.EventHandler(this.box_Leave);
             // 
             // label2
             // 
@@ -209,8 +215,9 @@
             // 
             this.userBox.Location = new System.Drawing.Point(87, 90);
             this.userBox.Name = "userBox";
-            this.userBox.Size = new System.Drawing.Size(190, 20);
+            this.userBox.Size = new System.Drawing.Size(189, 20);
             this.userBox.TabIndex = 7;
+            this.userBox.Leave += new System.EventHandler(this.box_Leave);
             // 
             // authCombo
             // 
@@ -233,7 +240,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 29);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Logon method:";
+            this.label5.Text = "Authentication method:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6
@@ -242,9 +249,9 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
             this.label6.Location = new System.Drawing.Point(3, 235);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 29);
+            this.label6.Size = new System.Drawing.Size(65, 29);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Drive Leter:";
+            this.label6.Text = "Drive Letter:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel1
@@ -286,7 +293,7 @@
             "/"});
             this.directoryBox.Location = new System.Drawing.Point(87, 211);
             this.directoryBox.Name = "directoryBox";
-            this.directoryBox.Size = new System.Drawing.Size(190, 21);
+            this.directoryBox.Size = new System.Drawing.Size(189, 21);
             this.directoryBox.TabIndex = 13;
             // 
             // label7
@@ -308,7 +315,7 @@
             this.panel2.Controls.Add(this.passwordBox);
             this.panel2.Location = new System.Drawing.Point(87, 148);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(191, 57);
+            this.panel2.Size = new System.Drawing.Size(189, 57);
             this.panel2.TabIndex = 15;
             // 
             // passphraseBox
@@ -318,6 +325,7 @@
             this.passphraseBox.PasswordChar = '*';
             this.passphraseBox.Size = new System.Drawing.Size(160, 20);
             this.passphraseBox.TabIndex = 3;
+            this.passphraseBox.Leave += new System.EventHandler(this.box_Leave);
             // 
             // privateKeyBox
             // 
@@ -325,6 +333,7 @@
             this.privateKeyBox.Name = "privateKeyBox";
             this.privateKeyBox.Size = new System.Drawing.Size(160, 20);
             this.privateKeyBox.TabIndex = 2;
+            this.privateKeyBox.Leave += new System.EventHandler(this.box_Leave);
             // 
             // privateKeyButton
             // 
@@ -368,7 +377,7 @@
             this.driveListView.Location = new System.Drawing.Point(3, 5);
             this.driveListView.MultiSelect = false;
             this.driveListView.Name = "driveListView";
-            this.driveListView.Size = new System.Drawing.Size(225, 274);
+            this.driveListView.Size = new System.Drawing.Size(222, 274);
             this.driveListView.SmallImageList = this.imageList;
             this.driveListView.TabIndex = 0;
             this.driveListView.UseCompatibleStateImageBehavior = false;
@@ -387,7 +396,9 @@
             this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
             this.imageList.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList.Images.SetKeyName(0, "network-offline.png");
-            this.imageList.Images.SetKeyName(1, "network-idle.png");
+            this.imageList.Images.SetKeyName(1, "connect_creating.png");
+            this.imageList.Images.SetKeyName(2, "network-offline.png");
+            this.imageList.Images.SetKeyName(3, "network-idle.png");
             // 
             // tableLayoutPanel2
             // 
@@ -440,12 +451,12 @@
             this.buttonPanel.Controls.Add(this.muButton, 1, 0);
             this.buttonPanel.Controls.Add(this.saveButton, 1, 0);
             this.buttonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonPanel.Location = new System.Drawing.Point(234, 285);
+            this.buttonPanel.Location = new System.Drawing.Point(231, 285);
             this.buttonPanel.Name = "buttonPanel";
             this.buttonPanel.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
             this.buttonPanel.RowCount = 1;
             this.buttonPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.buttonPanel.Size = new System.Drawing.Size(302, 40);
+            this.buttonPanel.Size = new System.Drawing.Size(298, 40);
             this.buttonPanel.TabIndex = 4;
             // 
             // muButton
@@ -453,9 +464,9 @@
             this.muButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.muButton.Image = global::Sshfs.Properties.Resources.mount;
             this.muButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.muButton.Location = new System.Drawing.Point(190, 3);
+            this.muButton.Location = new System.Drawing.Point(188, 3);
             this.muButton.Name = "muButton";
-            this.muButton.Size = new System.Drawing.Size(94, 34);
+            this.muButton.Size = new System.Drawing.Size(92, 34);
             this.muButton.TabIndex = 4;
             this.muButton.Text = "Mount";
             this.muButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -469,7 +480,7 @@
             this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.saveButton.Location = new System.Drawing.Point(90, 3);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(94, 34);
+            this.saveButton.Size = new System.Drawing.Size(92, 34);
             this.saveButton.TabIndex = 3;
             this.saveButton.Text = "Save";
             this.saveButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -479,7 +490,7 @@
             // openFileDialog
             // 
             this.openFileDialog.FileName = "id_rsa";
-            this.openFileDialog.Filter = "Private Key|*";
+            this.openFileDialog.Filter = "Pivate Key Files (*.*)|*";
             this.openFileDialog.Title = "Open Private Key";
             this.openFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog_FileOk);
             // 
@@ -498,6 +509,10 @@
             // 
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showMenuItem,
+            this.toolStripSeparator1,
+            this.mountMenuItem,
+            this.unmountMenuItem,
+            this.toolStripSeparator2,
             this.startupMenuItem,
             this.aboutMenuItem,
             this.exitMenuItem});
@@ -506,7 +521,8 @@
             this.contextMenu.Name = "contextMenuStrip1";
             this.contextMenu.ShowCheckMargin = true;
             this.contextMenu.ShowImageMargin = false;
-            this.contextMenu.Size = new System.Drawing.Size(125, 92);
+            this.contextMenu.Size = new System.Drawing.Size(125, 170);
+            this.contextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenu_Opening);
             // 
             // showMenuItem
             // 
@@ -514,6 +530,32 @@
             this.showMenuItem.Size = new System.Drawing.Size(156, 22);
             this.showMenuItem.Text = "Show Manager";
             this.showMenuItem.Click += new System.EventHandler(this.showMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(121, 6);
+            // 
+            // mountMenuItem
+            // 
+            this.mountMenuItem.Name = "mountMenuItem";
+            this.mountMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.mountMenuItem.Text = "Mount";
+            this.mountMenuItem.DropDownClosed += new System.EventHandler(this.mountMenuItem_DropDownClosed);
+            this.mountMenuItem.DropDownOpening += new System.EventHandler(this.mountMenuItem_DropDownOpening);
+            // 
+            // unmountMenuItem
+            // 
+            this.unmountMenuItem.Name = "unmountMenuItem";
+            this.unmountMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.unmountMenuItem.Text = "Unmount";
+            this.unmountMenuItem.DropDownClosed += new System.EventHandler(this.unmountMenuItem_DropDownClosed);
+            this.unmountMenuItem.DropDownOpening += new System.EventHandler(this.unmountMenuItem_DropDownOpening);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(121, 6);
             // 
             // startupMenuItem
             // 
@@ -541,7 +583,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 328);
+            this.ClientSize = new System.Drawing.Size(532, 328);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -609,6 +651,10 @@
         private System.Windows.Forms.ToolStripMenuItem startupMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIcon;
         private System.Windows.Forms.ToolStripMenuItem showMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem mountMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem unmountMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
 
 
 

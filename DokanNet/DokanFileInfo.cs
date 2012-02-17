@@ -32,7 +32,7 @@ namespace DokanNet
                     ((GCHandle) ((IntPtr) _context)).Free();
                     _context = 0;
                 }
-                else if (value != null)
+                if (value != null)
                 {
                     _context = (ulong) (IntPtr) GCHandle.Alloc(value);
                 }
@@ -78,15 +78,28 @@ namespace DokanNet
             get { return _writeToEndOfFile; }
         }
 
-        public WindowsIdentity Requestor
+        public WindowsIdentity GetRequestor()
         {
-            get { return new WindowsIdentity(NativeMethods.DokanOpenRequestorToken(this)); }
+            try
+            {
+                return new WindowsIdentity(NativeMethods.DokanOpenRequestorToken(this));
+            }
+            catch 
+            {
+
+                return null;
+            }
+          
         }
 
-        public bool ResetTimeout(int milliseconds)
+        public bool TryResetTimeout(int milliseconds)
         {
+
             return NativeMethods.DokanResetTimeout((uint) milliseconds, this);
         }
+
+       
+        private DokanFileInfo(){}
     }
 }
 #pragma warning restore 649,169
