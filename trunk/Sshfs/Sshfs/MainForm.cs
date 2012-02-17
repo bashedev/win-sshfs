@@ -4,11 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
@@ -22,9 +22,9 @@ namespace Sshfs
     {
         private readonly StringBuilder _balloonText = new StringBuilder(255);
         private readonly List<SftpDrive> _drives = new List<SftpDrive>();
+        private readonly Regex _regex = new Regex(@"^New Drive\s\d{1,2}$", RegexOptions.Compiled);
         private readonly Queue<SftpDrive> _suspendedDrives = new Queue<SftpDrive>();
         private bool _balloonTipVisible;
-
 
         private int _lastindex = -1;
         private int _namecount;
@@ -48,7 +48,9 @@ namespace Sshfs
             startupMenuItem.Checked = Utilities.IsAppRegistredForStarup();
 
             // _drives.Presist("config.xml",true);
+
             _drives.Load("config.xml");
+
 
             driveListView.BeginUpdate();
             for (int i = 0; i < _drives.Count; i++)
@@ -63,9 +65,7 @@ namespace Sshfs
             if (driveListView.Items.Count != 0)
             {
                 driveListView.SelectedIndices.Add(0);
-               
             }
-
 
 
             driveListView.EndUpdate();
@@ -122,6 +122,10 @@ namespace Sshfs
                 Visible = false;
                 e.Cancel = true;
             }
+            else
+            {
+                notifyIcon.Visible = false;
+            }
             base.OnFormClosing(e);
         }
 
@@ -151,21 +155,20 @@ namespace Sshfs
             var item =
                 (drive.Tag = new ListViewItem(drive.Name, 0) {Tag = drive, Selected = true}) as
                 ListViewItem;
-          
+
             driveListView.Items.Add(item
                 );
             item.EnsureVisible();
-           
-    
+
+
             SetupPanels();
         }
 
         private void drive_StatusChanged(object sender, EventArgs e)
         {
-          
             var drive = sender as SftpDrive;
 
-            Debug.WriteLine("Status Changed {0}:{1}", sender,drive.Status);
+            Debug.WriteLine("Status Changed {0}:{1}", sender, drive.Status);
 
             if (_suspend && drive.Status == DriveStatus.Unmounted)
             {
@@ -178,24 +181,24 @@ namespace Sshfs
                                          drive.Status == DriveStatus.Mounted ? "Mounted" : "Unmounted"));
             }
 
-            this.BeginInvoke(new MethodInvoker(() =>
-                                                   {
-                                                       var item =
-                                                           drive.Tag as ListViewItem;
+            BeginInvoke(new MethodInvoker(() =>
+                                              {
+                                                  var item =
+                                                      drive.Tag as ListViewItem;
 
 
-                                                       if (item.Selected)
-                                                       {
-                                                           muButton.Text = drive.Status == DriveStatus.Mounted
-                                                                               ? "Unmount"
-                                                                               : "Mount";
-                                                           muButton.Image = drive.Status == DriveStatus.Mounted
-                                                                                ? Resources.unmount
-                                                                                : Resources.mount;
-                                                           muButton.Enabled = true;
-                                                       }
-                                                       item.ImageIndex = drive.Status == DriveStatus.Mounted ? 1 : 0;
-                                                   }));
+                                                  if (item.Selected)
+                                                  {
+                                                      muButton.Text = drive.Status == DriveStatus.Mounted
+                                                                          ? "Unmount"
+                                                                          : "Mount";
+                                                      muButton.Image = drive.Status == DriveStatus.Mounted
+                                                                           ? Resources.unmount
+                                                                           : Resources.mount;
+                                                      muButton.Enabled = true;
+                                                  }
+                                                  item.ImageIndex = drive.Status == DriveStatus.Mounted ? 1 : 0;
+                                              }));
         }
 
         private void removeButton_Click(object sender, EventArgs e)
@@ -217,13 +220,12 @@ namespace Sshfs
                                : driveListView.SelectedIndices[0];
 
                 driveListView.Items.Remove(driveListView.SelectedItems[0]);
-               
+
                 if (next != -1)
                 {
                     _lastindex = -1;
                     driveListView.SelectedIndices.Add(next);
                     driveListView.Items[next].EnsureVisible();
-                    
                 }
 
                 SetupPanels();
@@ -271,7 +273,7 @@ namespace Sshfs
 
         private void authBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            authLabel.Text = authCombo.Text;
+            authLabel.Text = String.Format("{0}:", authCombo.Text);
             passwordBox.Visible = authCombo.SelectedIndex == 0;
             privateKeyButton.Visible = passphraseBox.Visible = privateKeyBox.Visible = authCombo.SelectedIndex == 1;
         }
@@ -294,25 +296,24 @@ namespace Sshfs
             }
             var drive = driveListView.SelectedItems[0].Tag as SftpDrive;
 
-            if ((nameBox.Text.StartsWith("New Drive") || nameBox.Text == String.Format("{0}@'{1}'", drive.Username, drive.Host)) && !String.IsNullOrEmpty(userBox.Text) && !String.IsNullOrEmpty(hostBox.Text))
+            if ((_regex.IsMatch(nameBox.Text) || nameBox.Text == String.Format("{0}@'{1}'", drive.Username, drive.Host)) &&
+                !String.IsNullOrEmpty(userBox.Text) && !String.IsNullOrEmpty(hostBox.Text))
             {
                 nameBox.Text = String.Format("{0}@'{1}'", userBox.Text, hostBox.Text);
             }
 
-           
 
-            driveListView.SelectedItems[0].Text = drive.Name = nameBox.Text.Trim();
-            drive.Host = hostBox.Text.Trim();
+            driveListView.SelectedItems[0].Text = drive.Name = nameBox.Text;
+            drive.Host = hostBox.Text;
             drive.Port = (int) portBox.Value;
-            drive.Username = userBox.Text.Trim();
+            drive.Username = userBox.Text;
             drive.ConnectionType = authCombo.SelectedIndex == 0 ? ConnectionType.Password : ConnectionType.PrivateKey;
             drive.Letter = letterBox.Text[0];
-            drive.Password = passwordBox.Text.Trim();
             drive.Root = directoryBox.Text.Trim();
             drive.Automount = mountCheck.Checked;
-            drive.Password = passwordBox.Text.Trim();
-            drive.PrivateKey = privateKeyBox.Text.Trim();
-            drive.Passphrase = passphraseBox.Text.Trim();
+            drive.Password = passwordBox.Text;
+            drive.PrivateKey = privateKeyBox.Text;
+            drive.Passphrase = passphraseBox.Text;
         }
 
         private void MountDrive(SftpDrive drive)
@@ -325,21 +326,21 @@ namespace Sshfs
                                           }
                                           catch (Exception e)
                                           {
-                                              this.BeginInvoke(new MethodInvoker(() =>
-                                                                                     {
-                                                                                         if (
-                                                                                             (drive.Tag as ListViewItem)
-                                                                                                 .Selected)
-                                                                                         {
-                                                                                             muButton.Enabled
-                                                                                                 = true;
-                                                                                         }
-                                                                                     }));
+                                              BeginInvoke(new MethodInvoker(() =>
+                                                                                {
+                                                                                    if (
+                                                                                        (drive.Tag as ListViewItem)
+                                                                                            .Selected)
+                                                                                    {
+                                                                                        muButton.Enabled
+                                                                                            = true;
+                                                                                    }
+                                                                                }));
 
 
                                               if (Visible)
                                               {
-                                                  this.BeginInvoke(
+                                                  BeginInvoke(
                                                       new MethodInvoker(
                                                           () =>
                                                           MessageBox.Show(this,
@@ -357,7 +358,7 @@ namespace Sshfs
         private void muButton_Click(object sender, EventArgs e)
         {
             var drive = driveListView.SelectedItems[0].Tag as SftpDrive;
-            
+
             if (drive.Status == DriveStatus.Unmounted)
             {
                 MountDrive(drive);
@@ -414,7 +415,15 @@ namespace Sshfs
 
         private void aboutMenuItem_Click(object sender, EventArgs e)
         {
-            new AboutForm().ShowDialog(this);
+            var about = Application.OpenForms.OfType<AboutForm>().FirstOrDefault();
+            if (about == null)
+            {
+                new AboutForm().ShowDialog(this);
+            }
+            else
+            {
+                about.Focus();
+            }
         }
 
         private void showMenuItem_Click(object sender, EventArgs e)
@@ -457,13 +466,9 @@ namespace Sshfs
         {
             Debug.WriteLine("CLIENT SIZE" + driveListView.ClientRectangle + driveListView.Columns[0].Width);
 
-          //  driveListView.Scrollable = false;
-           // driveListView.Refresh();
+            //  driveListView.Scrollable = false;
+            // driveListView.Refresh();
             driveListView.Columns[0].Width = driveListView.ClientRectangle.Width - 1;
-
-            
-           
-
         }
 
         protected override void OnFormClosed(FormClosedEventArgs e)
@@ -472,12 +477,68 @@ namespace Sshfs
             _drives.Presist("config.xml");
 
             Parallel.ForEach(_drives.Where(d => d.Status != DriveStatus.Unmounted), d =>
-                                                                                      {
-                                                                                          d.StatusChanged -=
-                                                                                              drive_StatusChanged;
-                                                                                          d.Unmount();
-                                                                                      });
+                                                                                        {
+                                                                                            d.StatusChanged -=
+                                                                                                drive_StatusChanged;
+                                                                                            d.Unmount();
+                                                                                        });
             base.OnFormClosed(e);
+        }
+
+        private void box_Leave(object sender, EventArgs e)
+        {
+            var box = sender as TextBox;
+            box.Text = box.Text.Trim();
+        }
+
+        private void contextMenu_Opening(object sender, CancelEventArgs e)
+        {
+            mountMenuItem.Enabled = _drives.Any(drive => drive.Status == DriveStatus.Unmounted);
+            unmountMenuItem.Enabled = _drives.Any(drive => drive.Status == DriveStatus.Mounted);
+        }
+
+        private void unmountMenuItem_DropDownOpening(object sender, EventArgs e)
+        {
+            foreach (var drive in _drives.Where(d => d.Status == DriveStatus.Mounted))
+            {
+                var umitem = unmountMenuItem.DropDownItems.Add(drive.Name);
+                umitem.Tag = drive;
+                umitem.Click += umitem_Click;
+            }
+        }
+
+        private void umitem_Click(object sender, EventArgs e)
+        {
+            ((sender as ToolStripItem).Tag as SftpDrive).Unmount();
+        }
+
+
+        private void unmountMenuItem_DropDownClosed(object sender, EventArgs e)
+        {
+            unmountMenuItem.DropDownItems.Clear();
+        }
+
+        private void mountMenuItem_DropDownClosed(object sender, EventArgs e)
+        {
+            mountMenuItem.DropDownItems.Clear();
+        }
+
+        private void mountMenuItem_DropDownOpening(object sender, EventArgs e)
+        {
+            foreach (var drive in _drives.Where(d => d.Status == DriveStatus.Unmounted))
+            {
+                var mitem = mountMenuItem.DropDownItems.Add(drive.Name);
+                mitem.Tag = drive;
+                mitem.Click += mitem_Click;
+            }
+        }
+
+        private void mitem_Click(object sender, EventArgs e)
+        {
+            var drive = (sender as ToolStripItem).Tag as SftpDrive;
+            if (driveListView.SelectedItems[0].Tag == drive)
+                muButton.Enabled = false;
+            MountDrive(drive);
         }
     }
 }

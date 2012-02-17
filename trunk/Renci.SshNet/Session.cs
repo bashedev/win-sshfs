@@ -27,6 +27,8 @@ namespace Renci.SshNet
     /// </summary>
     public partial class Session : IDisposable
     {
+
+        private bool _keyExchangeInProgress = false; 
         /// <summary>
         /// Specifies maximum packet size defined by the protocol.
         /// </summary>
@@ -635,7 +637,11 @@ namespace Renci.SshNet
         {
             if (this._socket == null || !this._socket.Connected)
                 return;
-
+            if (this._keyExchangeInProgress && !(message is IKeyExchangedAllowed))
+            {
+                //  Wait for key exchange to be completed
+                this.WaitHandle(this._keyExchangeCompletedWaitHandle);
+            }
             //  Messages can be sent by different thread so we need to synchronize it            
             var paddingMultiplier = this._clientCipher == null ? (byte)8 : (byte)this._clientCipher.BlockSize;    //    Should be recalculate base on cipher min length if cipher specified
 
@@ -1088,6 +1094,7 @@ namespace Renci.SshNet
         /// <param name="message"><see cref="KeyExchangeInitMessage"/> message.</param>
         protected virtual void OnKeyExchangeInitReceived(KeyExchangeInitMessage message)
         {
+            this._keyExchangeInProgress = true;
             this._keyExchangeCompletedWaitHandle.Reset();
 
             //  Disable all registered messages except key exchange related
@@ -1173,6 +1180,7 @@ namespace Renci.SshNet
 
             //  Signal that key exchange completed
             this._keyExchangeCompletedWaitHandle.Set();
+            this._keyExchangeInProgress = false; 
         }
 
         /// <summary>
